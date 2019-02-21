@@ -205,6 +205,24 @@ img {
   color: #212529;
   font-size: 1.6rem;
 }
+@media (max-width: 500px) {
+  .body {
+    margin: 0 5%;
+  }
+  .container.home header {
+    flex-flow: column;
+    align-items: center;
+  }
+  .container.home header h1 {
+    margin: 1rem 0;
+  }
+  .container.home header nav {
+    align-content: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;

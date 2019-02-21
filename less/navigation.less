@@ -22,12 +22,30 @@
                 color: @font-color;
                 font-size: 1.6rem;
             }
-        }   
+        }
     }
 }
     
 
-
+@media @mobile {
+    .body {
+        margin: 0 5%;
+    }
+    .container.home header  {
+        flex-flow: column;
+        align-items: center;
+        h1 {
+            margin: 1rem 0;
+        }
+        nav {
+            align-content: center;
+            justify-content: space-around;
+            width: 100%;
+            margin-bottom: 1rem;
+        
+        }
+    }
+}
 
 
 
