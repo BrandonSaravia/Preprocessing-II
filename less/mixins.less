@@ -1,1 +1,31 @@
 // Mixins in here
+
+.center(){
+    text-align: center;
+    width: 100%;
+    border: 1px solid;
+    padding: 1.25rem 0;
+    border-radius: 16px;
+    font-size: 2rem;
+}
+
+.custom-button(@a, @j) {
+    background: @a;
+    color: @j;
+}
+
+
+.content-pick{
+    .btn {
+        .center();
+        .custom-button(@button-bg, @main-bg);
+        &:hover {
+            background: @main-bg;
+            color: @font-color;
+            cursor: pointer;
+        }
+    }
+    
+}
+
+
